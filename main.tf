@@ -9,7 +9,6 @@ locals {
   }
 
   label_order = length(var.label_order) > 0 ? var.label_order : local.label_order_defaults.label_order
-  ###########
 
   id_labels = [for l in local.label_order : local.id_context[l] if length(local.id_context[l]) > 0]
   id        = lower(join(var.delimiter, local.id_labels, var.attributes))
