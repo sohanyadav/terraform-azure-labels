@@ -1,3 +1,7 @@
+## Managed By : OpsStation
+## Description : This Script is used to create Transfer Server, Transfer User And label .
+## Copyright @ OpsStation. All Right Reserved.
+
 locals {
   label_order_defaults = {
     label_order = ["environment", "name"]

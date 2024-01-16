@@ -37,13 +37,13 @@ variable "attributes" {
 variable "extra_tags" {
   type        = map(string)
   default     = {}
-  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
+  description = "Additional tags (e.g. map(`BusinessUnit`,`OpsStation`)."
 }
 
 variable "managedby" {
   type        = string
   default     = ""
-  description = "ManagedBy, eg"
+  description = "ManagedBy, OpsStation"
 }
 
 variable "enabled" {
